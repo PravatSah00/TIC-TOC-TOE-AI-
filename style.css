@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ?????????????????????????????????????????????????????????? */
+/* ?????????????????????????????????????????????????????????? */
+body{
+    background-color: #03203f;
+}
+#heading{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Carter One', cursive;
+    background-color: #aaaaaa24;
+    color: rgb(219, 158, 158);
+    box-shadow:5px 5px 5px #aaaaaa44;
+    min-height: 70px;
+}
+#container{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+#choose{
+    width: 150px;
+    height: 600px;
+    background-color: #7eb9a4;
+    box-shadow: 5px 5px 5px #8ec3c740;
+    border-radius: 15px;
+}
+#choose h1{
+    font-family: 'Carter One', cursive;
+    color: rgb(32, 23, 23);
+    background-color: #03203f66;
+    font-size: 37px;
+    text-align: center;
+}
+.cross{
+    background-color: #4D7C7B;
+    display: block;
+    width:80%;
+    margin:30px auto 0;
+    border-radius: 10px;
+}
+.zero{
+    background-color: #4D7C7B;
+    display: block;
+    font-size: 130px;
+    width:80%;
+    margin:30px auto 0;
+    border-radius: 10%;
+}
+/* ??????????????????????????????????????????????????????????
+?????????????????????????????????????????????????????????? */
+
+#play-area{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#play-area div{
+    background-color:#7EB9A4;
+    width: 30%;
+    height: 29%;
+}
+
+
+#win-bar{
+    background-color: #B5D5C5;
+    color:#08396d;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #8ec3c740;
+    width:80%;
+    height: 50px;
+    margin: 50px auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+#bar{
+    width: 85%;
+    height: 100%;
+    background-color: #02101f;
+}
+#bar-ind{
+    height: 100%;
+    width: 50%;
+    background-color: #447463;
+}
+.reset{
+    display:block;
+    margin:0 auto 30px;
+    font-size: 30px;
+    font-family: 'Carter One', cursive;
+    padding: 5px 15px;
+    color: rgb(184, 184, 184);
+    background-color: #3a5b4f;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #aaaaaa24;
+    transition: all 0.5s;
+}
+.reset:hover{
+    background-color: #253730;
+}
+/* ///////////////////////////////////////////////////////////// */
+.select-color{
+    background-color: #1f7e41;
+}
+.cross-bg{
+    background-image: url("image/cross.png");
+    background-size:90% 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.zero-bg{
+    background-image: url("image/zero.png");
+    background-size:110% 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media screen and (max-width: 400px) {
+    #heading{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 850px){
+    #choose{
+        height: 500px;
+    }
+    #play-area{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    #container{
+        flex-wrap: wrap;
+        width: 500px;
+        margin: 50px auto 0;
+    }
+    #choose{
+        width: 100%;
+        height: 120px;
+        margin-bottom: 30px;
+        display: flex;
+    }
+    #inner-choose{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+    #inner-choose h1{
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .cross{
+        width: 20%;
+        margin: 0;
+    }
+    .zero{
+        width: 20%;
+        margin: 0;
+    }
+
+
+    #play-area{
+        width: 500px;
+        height: 500px;
+    }
+    #win-bar{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #container{
+        width: 400px;
+    }
+    #play-area{
+        width: 400px;
+        height: 400px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #container{
+        width: 350px;
+    }
+    #play-area{
+        width: 350px;
+        height: 350px;
+    }
+}

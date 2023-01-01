@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TIC-TOC-TOE</title>
+</head>
+<body>
+    <h1 id="heading">TIC TOC TOE</h1>
+    <div id="container">
+        <div id="choose">
+            <div id="inner-choose">
+                <h1>Choose</h1>
+                <svg class="cross" viewBox="0 0 100 100">
+                    <path d="M10,10 L30,10 L90,90 L70,90 Z" style="fill: #DB9E9E"></path>
+                    <path d="M70,10 L90,10 L30,90" style="stroke:#DB9E9E"></path>
+                </svg>
+                <svg class="zero" viewBox="0 0 100 100">
+                    <text x="50" y="95" text-anchor="middle" style="fill:#DB9E9E;">0</text>
+                </svg>
+            </div>
+        </div>
+        <div id="play-area">
+            <div class="box-1"></div>
+            <div class="box-2"></div>
+            <div class="box-3"></div>
+            <div class="box-4"></div>
+            <div class="box-5"></div>
+            <div class="box-6"></div>
+            <div class="box-7"></div>
+            <div class="box-8"></div>
+            <div class="box-9"></div>
+        </div>
+    </div>
+    <div id="win-bar">
+        <h1 id="x">X</h1>
+        <div id="bar">
+            <div id="bar-ind"></div>
+        </div>
+        <h1 id="0">0</h1>
+    </div>
+    <button class="reset">RESET</button>
+    <script src="script.js"></script>
+</body>
+</html>
